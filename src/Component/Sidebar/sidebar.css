@@ -1,0 +1,21 @@
+.sidebar-container{
+    height: 100vh;
+    background-color: rgb(15,15,15);
+    width: 280px;
+    position: fixed;
+    z-index: 1000;
+}
+.rows{
+    
+    padding: 30px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-bottom: 1px solid rgb(44,44,44);
+}
+.rows>span{
+    font-size: 20px;
+    font-weight: 400;
+    
+}

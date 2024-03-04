@@ -1,0 +1,1 @@
+export const YOUTUBE_LOGO = "https://logodownload.org/wp-content/uploads/2014/10/youtube-logo-9.png"
