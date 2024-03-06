@@ -80,7 +80,7 @@ const Navbar = () => {
                     <button className="searchlogo-container"><CiSearch /></button>
 
                 </div >
-                {suggestions.length>0 && <div className="suggestions" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+                {suggestions?.length>0 && <div className="suggestions" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
                     <ul>
                         {
                             suggestions?.map((item) => (

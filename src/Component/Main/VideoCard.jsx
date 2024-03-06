@@ -1,29 +1,36 @@
 
 
 const VideoCard = ({info}) => {
-    console.log(info);
     const {snippet,statistics} = info;
+
+    const formatNumber = (number) => {
+        if (number < 1000) {
+          return number.toString(); // No need to format
+        } else if (number < 1000000) {
+          return (number / 1000).toFixed(1) + 'K'; // Convert to thousands
+        } else if (number < 1000000000) {
+          return (number / 1000000).toFixed(2) + 'M'; // Convert to millions
+        } else {
+          return (number / 1000000000).toFixed(2) + 'B'; // Convert to billions
+        }
+    };
+
     return (
         <div className="youtube-cards">
             <div className="thumbnail-container">
-                <img src={snippet.thumbnails.high.url} alt="" />
+                <img src={snippet?.thumbnails?.high?.url} alt="" />
             </div>
             <div className="video-details-container">
-                <div>
-                    <span>
-                        Logo
-                    </span>
-                </div>
                 <div className="video-details">
                     <span className="video-name">
-                        {snippet.title}
+                        {snippet?.title}
                         
                     </span>
                     <span className="channel-name">
-                        {snippet.channelTitle}
+                        {snippet?.channelTitle}
                     </span>
                     <span className="views-count">
-                        {Math.ceil(statistics.viewCount/1000)}k Views
+                        {formatNumber(statistics?.viewCount)} Views
                     </span>
                 </div>
             </div>

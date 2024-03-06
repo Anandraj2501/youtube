@@ -1,0 +1,69 @@
+.watchpage-container{
+    background-color: rgb(18,18,18);
+    padding: 20px;
+    display: flex;
+}
+.left-container{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.liveadd-btn{
+    color: white;
+}
+.info-container{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.iframe-container{
+    position: relative;
+}
+.iframe-container>iframe{
+    width: 1200px;
+    height: 600px;
+    border-radius: 10px;
+}
+.views{
+    color: rgb(146, 144, 144);
+}
+.right-container{
+    width: 100%;
+    height: 600px;
+    padding: 0px 40px;
+}
+.live-chat{
+    color: white;
+    background-color: rgb(15,15,15);
+    padding: 20px;
+}
+.live-chat-container{
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.live-chat-box{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 20px;
+    gap: 2rem;
+    overflow-y: scroll;
+}
+.live-chat-box::-webkit-scrollbar {
+    width: 8px;
+}
+
+.live-chat-box::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.live-chat-box::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 5px;
+}
+.watchvideo-name{
+    padding-top: 20px;
+}

@@ -1,9 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 *{
   box-sizing: border-box;
+}
+@font-face {
+  font-family: 'youtube_font';
+  src: url("../src/Utils/Font/KFOmCnqEu92Fr1Mu4mxK.woff2");
+
+  font-style: normal;
+  font-weight: normal;
 }
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: "youtube_font";
 }
 
